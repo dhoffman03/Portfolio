@@ -1,0 +1,116 @@
+:root {
+    --beige: #D0A78B;
+    --cream: #DBC3B2;
+    --coffee: #80502F;
+    --neutral: #B08465; 
+    --full: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cream);
+    color: var(--coffee);
+    font-family: "Courier New", Courier, monospace;
+}
+
+header {
+    background-color: var(--coffee);
+    height: 100px;
+    width: var(--full);
+    padding: 10px 0px;
+}
+
+li a {
+    text-decoration: none;
+}
+
+main {
+    display: none;
+}
+
+ul li{
+    display: inline;
+    padding: 0px 20px;
+}
+
+.avatar{
+    height: 280px;
+    width: 240px;
+    border: 5px solid var(--beige);
+    position: absolute;
+    top: 125px;
+    left: 77.5px;
+    z-index: 1;
+}
+
+.background-img{
+    height: 300px;
+    width: var(--full);
+    position: absolute;
+    top: 119px;
+    left: 0px;
+    z-index: -1;
+}
+
+.card {}
+
+.card-header {}
+
+.card-img {}
+
+.color-nav:hover {
+  color: hsl(32, 100%, 50%);
+}
+
+.contact-nav {}
+
+.main-header {
+    font-size: 40px;
+    color: var(--coffee);
+    background-color: var(--beige);
+    text-align: center;
+    line-height: 80px;
+    margin: 10px 0px 10px;
+}
+
+.main-nav a {
+    color: var(--beige);
+    border-bottom: 3px solid var(--beige);
+ 
+
+}
+
+.main-nav {
+    text-align: right;
+    font-size: 30px;
+   position: absolute;
+    top:40px;
+    right: 0px;
+}
+
+.subtitle{
+    font-size: 40px;
+    color: var(--coffee);
+    background-color: var(--beige);
+    text-align: center;
+    line-height: 60px;
+    width: 400px;
+    height: 60px;
+    position: absolute;
+    top: 340px;
+    right: 0;
+}
+
+.title-box {
+    width: 400px;
+    height: 90px;
+}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 992px) {}
+
