@@ -1,0 +1,27 @@
+:root {
+    --beige: #D0A78B;
+    --cream: #DBC3B2;
+    --coffee: #80502F;
+    --neutral: #B08465; 
+    --full: 100%;
+}
+
+body {
+    background-color: var(--cream);
+    color: var(--coffee);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+
+header {
+    background-color: var(--coffee);
+    border-bottom: 5px solid var(--neutral);
+}
+
+
+
+footer {
+    background-color: var(--coffee);
+    border-top: 5px solid var(--neutral);
+    color: var(--beige);
+}
