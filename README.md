@@ -33,3 +33,5 @@ This project was completed through the University of Minesota Coding Bootcamp
 * [How to Layer Images](https://stackoverflow.com/questions/48474/how-do-i-position-one-image-on-top-of-another-in-html)
 * [CSS z-index Property](https://www.w3schools.com/cssref/pr_pos_z-index.asp)
 * [CSS Borders](https://www.w3schools.com/css/css_border.asp)
+* [Using rem units](https://www.sitepoint.com/understanding-and-using-rem-units-in-css/)
+* [Aligning h1 with nav bar](https://stackoverflow.com/questions/17760916/aligning-h1-with-navigation-bar)
