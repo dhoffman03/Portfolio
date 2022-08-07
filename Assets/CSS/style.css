@@ -15,7 +15,7 @@ html {
 body {
     background-color: var(--cream);
     color: var(--coffee);
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Andale Mono', Courier, monospace;
     font-size: 1.8rem;
     line-height: 1.5;
 }
@@ -35,6 +35,14 @@ ul li {
 main {
     margin: 1.5rem;
     text-align: center;
+}
+
+h2 {
+    display: inline-block;
+    width: 50%;
+    font-size: 2.5rem;
+    border: .5rem double var(--beige);
+    margin: 1rem;
 }
 
 header, footer {
@@ -86,6 +94,30 @@ footer {
     
 }
 
+.content {
+    display: inline-block;
+    width: 60rem;
+    height: 60rem;
+    text-align: center;
+    border: .5rem double var(--beige);
+    border-radius: 2rem;
+    margin: 2rem;
+}
+
+.content h3{
+    padding: 3rem;
+    background: var(--beige);
+    color: var(--coffee);
+    border-radius: 1.5rem 1.5rem 0rem 0rem;
+}
+
+.content img {
+    width: 100%;
+    height: 50rem;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
 .main-cards {
     display: flex;
     flex-wrap: wrap;
@@ -98,15 +130,15 @@ footer {
     width: 35rem;
     height: 35rem;
     text-align: center;
-    border: .5rem double var(--coffee);
+    border: .5rem double var(--beige);
     border-radius: 2rem;
-    background-color: var(--beige);
+    opacity: 0.7;
 }
 
 .card h3 {
     padding: 2rem;
-    background: var(--coffee);
-    color: var(--cream);
+    background: var(--beige);
+    color: var(--coffee);
     border-radius: 1.5rem 1.5rem 0rem 0rem;
 }
 
@@ -117,6 +149,10 @@ footer {
     border-radius: 2rem;
 }
 
+.card:hover {
+    border-color: var(--coffee);
+    opacity: 1;
+}
 
 .contact-links {}
 .contact-form {}
