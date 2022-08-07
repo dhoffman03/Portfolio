@@ -35,3 +35,8 @@ This project was completed through the University of Minesota Coding Bootcamp
 * [CSS Borders](https://www.w3schools.com/css/css_border.asp)
 * [Using rem units](https://www.sitepoint.com/understanding-and-using-rem-units-in-css/)
 * [Aligning h1 with nav bar](https://stackoverflow.com/questions/17760916/aligning-h1-with-navigation-bar)
+* [Flexbox Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+* []()
+* []()
+* []()
+* []()
