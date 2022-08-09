@@ -20,7 +20,7 @@ The application can be viewed with the below links:
 
 * [Deployed website]()
 
-* [Code repository]()
+* [Code repository](https://github.com/dhoffman03/Portfolio.git)
 
 ## Credits
 This project was completed through the University of Minesota Coding Bootcamp
