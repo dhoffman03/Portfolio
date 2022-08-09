@@ -7,9 +7,9 @@ This portfolio project focuses on applying recently learned core HTML skills wit
 
 The 'About Me'' section includes a recent photo of myself along with a few fun facts. Within the 'Projects' section, there are three coding samples and one large graphic design sample displayed. Finally, the 'Contact'section includes links to my email, GitHub, and LinkedIn, along with a contact form to leave a message.
 
-![image of deployed webpage]()
-![image of deployed webpage]()
-![image of deployed webpage]()
+![image of deployed webpage](./Assets/images/deployed%20website.png)
+![image of deployed webpage-992px](./Assets/images/deployed-website-992.png)
+![image of deployed webpage-768px](./Assets/images/deployed-wbsite-768.png)
 
 ## Installation
 Upload index.html and assets folder to the deployed webserver. The assets folder contains CSS files as well as images.
