@@ -21,28 +21,42 @@ body {
 }
 
 header {
+    /* Creates flex-box */
+    display: flex;
+    /* Makes space between h1 and nav */
+    justify-content: space-between;
     border-bottom: 0.5rem solid var(--neutral);
     height: 10rem;
     padding: 1rem 0rem;
     margin-bottom: 1rem;
 }
 
-/* makes nav links horizontal*/
+/* Makes nav links horizontal */
 ul li {
     display: inline-block;
 }
 
+/* Removes underline from link */
+li a {
+    text-decoration: none;
+}
+
+/* Set margin and Center text */
 main {
     margin: 1.5rem;
     text-align: center;
 }
 
+/*  */
 h2 {
-    display: inline-block;
-    width: 50%;
-    font-size: 2.5rem;
-    border: .5rem double var(--beige);
-    margin: 1rem;
+    /* Will stretch full width of screen */
+    width: var(--full);
+    font-size: 3rem;
+    /* Creates border around text */
+    border: 0.5rem double var(--cream);
+    margin: 3rem 0rem;
+    background-color: var(--coffee);
+    color: var(--cream);
 }
 
 header, footer {
@@ -54,15 +68,22 @@ header, footer {
 footer {
     border-top: 0.5rem solid var(--neutral);
     height: 8rem;
+    /* Centers text vertically within footer */
     line-height: 5.5rem;
     padding: 1rem;
+    /* Centers text horizontally*/
     text-align: center;
 }
 
+/* Make comment input of form larger then name and email input */
+#comments {
+    height: 15rem;
+}
+
+/* Creates a box around h1*/
 .main-header {
     background-color: var(--beige);
     color: var(--coffee);
-    float: left;
     font-size: 3rem;
     line-height: 7.5rem;
     text-align: center;
@@ -70,43 +91,55 @@ footer {
 }
 
 .main-nav a {
-    color: var(--beige);
     padding: 0rem 1.3rem 0rem;
+    color: var(--beige);
 }
 
 .main-nav {
-    float: right;
     font-size: 2.5rem;
     line-height: 7.5rem;
     padding: 0rem 6rem 0rem;
 }
 
-/* set nav links highlight color*/
+/* When mouse hovers over text, link changes color */
 .color-nav:hover {
     color: hsl(118, 24%, 69%);
 }
 
-.bio {}
-.bio-image {}
-.bio-text {}
+/* text and image are aligned side by side */
+.bio-content {
+    display: flex;
+    align-items: center;
+    margin: 3rem
+}
 
-.work {
-    
+.bio-content img {
+    border: .5rem double var(--beige);
+    /* Rounds coners */
+    border-radius: 2rem;
+    width: 30rem;
+    height: 35rem;
+}
+
+.bio-content p{
+    text-align: justify;
+    margin: 2rem 2rem 2rem 5rem;
 }
 
 .content {
     display: inline-block;
-    width: 60rem;
+    width: 70rem;
     height: 60rem;
-    text-align: center;
-    border: .5rem double var(--beige);
+    border: .5rem double var(--neutral);
+    background-color: var(--cream);
     border-radius: 2rem;
-    margin: 2rem;
+    margin: 3rem;
+    position: relative;
 }
 
 .content h3{
     padding: 3rem;
-    background: var(--beige);
+    background: var(--neutral);
     color: var(--coffee);
     border-radius: 1.5rem 1.5rem 0rem 0rem;
 }
@@ -120,10 +153,14 @@ footer {
 
 .main-cards {
     display: flex;
+    /* Forces elements to the next line if they do not fit */
     flex-wrap: wrap;
+    /* Sets elements as a row */
     flex-direction: row;
-    justify-content: center;
+    /* Cards are evenly spaced*/
+    justify-content: space-evenly;
     gap: 2rem;
+    margin: 3rem 0rem;
 }
 
 .card {
@@ -132,6 +169,7 @@ footer {
     text-align: center;
     border: .5rem double var(--beige);
     border-radius: 2rem;
+    /* Sets opacicty */
     opacity: 0.7;
 }
 
@@ -149,13 +187,195 @@ footer {
     border-radius: 2rem;
 }
 
+/* When mouse hovers over card, border changes color and card becomes opaque*/
 .card:hover {
-    border-color: var(--coffee);
+    border-color: var(--neutral);
     opacity: 1;
 }
 
-.contact-links {}
-.contact-form {}
-.label {}
-.input {}
-.btn {}
+/* Creates glow border around content*/
+.content::after {
+    content: "";
+    position: absolute;
+    top: 3.45rem;
+    left: 3.45rem;
+    width: 90%;
+    height: 90%;
+    background: linear-gradient(rgb(129, 212, 179),rgb(45, 112, 87));
+    z-index: -1;
+    filter: blur(2rem);
+    transition: all 500ms ease;
+}
+
+/* Border glows when hovered */
+.content:hover::after {
+    width: 103%;
+    height: 103%;
+    top: -1rem;
+    left: -1rem;
+}
+
+.contact-links {
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-links li {
+    padding: 0rem 5rem;
+}
+
+.contact-links a{
+    color: var(--neutral);
+}
+
+.contact-form {
+    margin: 3rem auto;
+    padding: 3rem 0;
+    border: .5rem double var(--coffee);
+    background-color: var(--beige);
+    width: 50%;
+    height: 50rem;
+}
+
+.label {    
+    display: inline-block;
+    text-align: left;
+    width: 75%;
+    margin: 1rem;
+}
+
+.input {
+    width: 75%;
+    border: 0.2rem solid var(--neutral);
+    padding: 1rem;
+    color: var(--beige);
+    background-color: var(--cream);
+}
+
+/* Changes text color of placeholder */
+::placeholder {
+    color: var(--coffee);
+}
+
+.btn {
+    height: 3.5rem;
+    width: 20rem;
+    margin-top: 1rem;
+    border: .2rem solid var(--coffee);
+    background-color: var(--cream);
+    color: var(--coffee);
+    border-radius: 2rem;
+}
+
+/* border and background changes when hovered */
+.btn:hover {
+    border-color: var(--neutral);
+    background-color: hsl(118, 24%, 69%);
+    color: var(--neutral);
+}
+
+/* Applies when screen is 992px or samller */
+@media (max-width: 992px) {
+    body {
+        font-size: 1.7rem;;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        }
+    
+    .main-header {
+        width: 30rem;
+        font-size: 2.5rem;
+    }
+
+    .main-nav {
+        font-size: 2rem;
+    }
+
+    .bio-content img {
+        width: 25rem;
+        height: 30rem;
+    }
+
+    /* Cards are split into two columns at 992px or smaller */
+    .card {
+        width: 40%;
+        height: 40%;
+    }
+
+    .card img{
+        height: 40%;
+    }
+
+    /* Form becomes wider */
+    .contact-form {
+        width: 80%;
+        height: 45rem;
+        padding: 2rem 0;
+    }
+
+    #comments {
+        height: 13rem;
+    }
+}
+   
+/* Applies when screen is 768px or samller */
+@media (max-width: 768px) {
+    body {
+        font-size: 1.6rem;;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .main-header {
+        width: 25rem;
+        font-size: 2rem;
+    }
+
+    .main-nav {
+        font-size: 1.8rem;
+    }
+
+    /* Stacks image on top of text */
+    .bio-content {
+        display: block;
+    }
+
+    .bio-content img {
+        width: 50%;
+        height: 50%;
+    }
+
+    .content {
+        width: 70%;
+        height: 50%;
+    }
+
+    .content img {
+        height: 50%;
+    }
+
+    /* Cards are stacked on top of eachother at 768px or smaller */
+    .card {
+        width: 60%;
+        height: 60%;
+    }
+
+    .card img{
+        height: 60%;
+    }
+
+    .contact-form {
+        width: 85%;
+        height: 40rem;
+        padding: 1.5rem 0;
+    }
+
+    #comments {
+        height: 9.5rem;
+    }
+}  
