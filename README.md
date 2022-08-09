@@ -8,7 +8,8 @@ This portfolio project focuses on applying recently learned core HTML skills wit
 The 'About Me'' section includes a recent photo of myself along with a few fun facts. Within the 'Projects' section, there are three coding samples and one large graphic design sample displayed. Finally, the 'Contact'section includes links to my email, GitHub, and LinkedIn, along with a contact form to leave a message.
 
 ![image of deployed webpage]()
-
+![image of deployed webpage]()
+![image of deployed webpage]()
 
 ## Installation
 Upload index.html and assets folder to the deployed webserver. The assets folder contains CSS files as well as images.
@@ -18,7 +19,7 @@ The linked deployed website was deployed using GitHub pages.
 ## Usage
 The application can be viewed with the below links:
 
-* [Deployed website]()
+* [Deployed website](https://dhoffman03.github.io/Portfolio/)
 
 * [Code repository](https://github.com/dhoffman03/Portfolio.git)
 
